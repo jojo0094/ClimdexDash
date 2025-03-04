@@ -1,0 +1,17 @@
+[project]
+name = "climdexdash"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "dash-leaflet>=1.0.15",
+    "dash>=2.18.2",
+    "dotenv>=0.9.9",
+    "fast-dash>=0.2.10",
+    "psycopg>=3.2.5",
+    "psycopg-binary>=3.2.5",
+    "psycopg2>=2.9.10",
+    "pyarrow>=19.0.1",
+    "psycopg2-binary>=2.9.10",
+]
