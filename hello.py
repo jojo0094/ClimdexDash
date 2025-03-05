@@ -9,6 +9,7 @@ def main() -> None:
 
     # load the data and create the data manager
     datasource = PostgresDataSource()
+    # datasource = CSVFileSource("data/fake_data.csv")
 
     app = Dash(external_stylesheets=[BOOTSTRAP])
     app.layout = create_layout(app, datasource)

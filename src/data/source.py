@@ -32,7 +32,7 @@ def get_psycopg3_connection():
 
 def fake_timeseries_data() -> pd.DataFrame:
     """using numpy to generate Sine wave data for a year at hourly intervals"""
-    time = pd.date_range(start="2022-01-01", end="2022-12-31", freq="H")
+    time = pd.date_range(start="2022-01-01", end="2022-12-31", freq="h")
     data = np.sin(np.linspace(0, 2 * np.pi, len(time)))
     return pd.DataFrame({"time": time, "total_precipitation": data})
 
@@ -53,7 +53,8 @@ class CSVFileSource(DataSource):
         self.data = fake_timeseries_data()
 
     def get_timeseries(self, lat: float, lon: float) -> pd.DataFrame:
-        df_filtered = self.data[(self.data["latitude"] == lat) & (self.data["longitude"] == lon)]
+        # df_filtered = self.data[(self.data["latitude"] == lat) & (self.data["longitude"] == lon)]
+        df_filtered = self.data
         return df_filtered.sort_values(by="time")
 
 # Concrete Strategy - Postgres Data Source

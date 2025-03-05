@@ -21,6 +21,10 @@ def create_layout(app: Dash, source: DataSource) -> html.Div:
                     # indices_card.render(app, source),
                 ],
             ),
+            #put a space between the two main components
+            html.Hr(),
+            html.H2("Map"),
+
             html.Div(
                 className="map-container",
                 children=[

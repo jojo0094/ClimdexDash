@@ -10,7 +10,7 @@ def render(app: Dash ) -> html.Div:
                     zoom=10, transition="flyTo")
 
     #use clickData to get the clicked point lat and lon to id="output"
-    @app.callback(Output("output", "children"), Input("map", "clickData"))
+    @app.callback(Output("output", "children"), Input("map", "clickData"), prevent_initial_call=True)
     def click_output(clickData):
         return f"You clicked on lat: {clickData['latlng']}"
 
