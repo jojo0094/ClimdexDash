@@ -81,7 +81,7 @@ def render(app: Dash, source: DataSource):
                 type="circle",
                 children=html.Div(
                     id="time-series-output",
-                        children=html.Div("Click on the map to load data and wait for the spinner to disappear. Note: Distance buffer logic was not applied yet.")
+                    children=html.Div("Click on the map to load data and wait for the spinner to disappear. Note: Distance buffer logic was not applied yet (points outside NZ bounding box will snap to nearest point; please allow up to 1 min of data loading time due to 2-core VM instance :D.")
                 )
             )
         ]
