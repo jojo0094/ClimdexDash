@@ -13,8 +13,8 @@ def main() -> None:
 
     app = Dash(external_stylesheets=[BOOTSTRAP])
     app.layout = create_layout(app, datasource)
-    app.run(debug=True)
-
+    app.run(debug=True, host="0.0.0.0", port=8050)
+2
 
 if __name__ == "__main__":
     main()

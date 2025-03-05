@@ -1,0 +1,9 @@
+
+Certbot failed to authenticate some domains (authenticator: nginx). The Certificate Authority re
+ported these problems:
+  Domain: jojo-curiosity-lab.com
+  Type:   unauthorized
+  Detail: During secondary validation: 84.32.84.32: Invalid response from http://jojo-curiosity-
+lab.com/.well-known/acme-challenge/DZA1oi3VH1JyN5VdkwtCQ4bN4vR-ikooRufdsxQ6elM: "<!doctype html>
+<title>Parked Domain name on Hostinger DNS system</title><meta charset=utf-8><meta content=\"IE=
+edge,chrome=1\" htt"
