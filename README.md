@@ -3,7 +3,7 @@
 
 This project demonstrates the **Strategy Design Pattern** to handle multiple data sources (CSV, PostgreSQL, etc.) for retrieving and visualizing total precipitation time series data. The implementation ensures **scalability, maintainability, and flexibility** by decoupling data retrieval logic from the dashboard setup.  
 
-A demo webapp can be found [here](http://http://195.35.21.96:8050/).
+A demo webapp can be found [here](http://195.35.21.96:8050/).
 
 ## **Overview**  
 - When a user clicks on the map, the dashboard retrieves total precipitation time series data for the selected location.  
