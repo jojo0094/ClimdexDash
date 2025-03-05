@@ -3,7 +3,7 @@ Plotly-based dashboard for extreme climate indices that showcases the use of str
 
 
 
-or implentn netcdf fiel source (wiht post inti) that load all inot your RAM which will provide quicker access to the data (or duckdb filebased approach) in __post_init__ method of the class. This will be a better approach for the data processing part. Stay tuned for that as well or use ducddb-based approach to see how the performance is improved.
+or implentn netcdf file source (wiht post inti) that load all inot your RAM which will provide quicker access to the data (or duckdb filebased approach) in __post_init__ method of the class. This will be a better approach for the data processing part. Stay tuned for that as well or use ducddb-based approach to see how the performance is improved.
 But now you will see your logic is decoupled from the whole dashboard setup therefore, more maintainable and scalable codebase. 
 
 Notes:
