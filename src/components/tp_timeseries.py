@@ -62,14 +62,14 @@ def render(app: Dash, source: DataSource):
 
         bar_fig1 = barchart_max_n_day_precipitation_amount(data, 5)
         bar_fig2 = barchart_maximum_consecutive_wet_days(data)
-        bar_fig3 = barchart_maximum_consecutive_dry_days(data)
+        # bar_fig3 = barchart_maximum_consecutive_dry_days(data)
 
 
         return html.Div([
             dcc.Graph(figure=fig),
             dcc.Graph(figure=bar_fig1),
             dcc.Graph(figure=bar_fig2),
-            dcc.Graph(figure=bar_fig3)
+            # dcc.Graph(figure=bar_fig3)
         ])
 
     return html.Div(

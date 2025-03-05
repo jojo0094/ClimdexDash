@@ -1,5 +1,5 @@
 # **ClimdexDash**  
-*A Plotly-based Dashboard for Extreme Climate Indices*  
+*A dash leaflet-based Dashboard for Extreme Climate Indices*  
 
 This project demonstrates the **Strategy Design Pattern** to handle multiple data sources (CSV, PostgreSQL, etc.) for retrieving and visualizing total precipitation time series data. The implementation ensures **scalability, maintainability, and flexibility** by decoupling data retrieval logic from the dashboard setup.  
 
