@@ -1,9 +1,10 @@
 
-Certbot failed to authenticate some domains (authenticator: nginx). The Certificate Authority re
-ported these problems:
-  Domain: jojo-curiosity-lab.com
-  Type:   unauthorized
-  Detail: During secondary validation: 84.32.84.32: Invalid response from http://jojo-curiosity-
-lab.com/.well-known/acme-challenge/DZA1oi3VH1JyN5VdkwtCQ4bN4vR-ikooRufdsxQ6elM: "<!doctype html>
-<title>Parked Domain name on Hostinger DNS system</title><meta charset=utf-8><meta content=\"IE=
-edge,chrome=1\" htt"
+root@srv449047:/home/webapps/ClimdexDash# sudo certbot --nginx -d jojo-curiosity-lab.com
+Saving debug log to /var/log/letsencrypt/letsencrypt.log
+Requesting a certificate for jojo-curiosity-lab.com
+An unexpected error occurred:
+There were too many requests of a given type :: too many failed authorizations (5) for "jojo-cur
+iosity-lab.com" in the last 1h0m0s, retry after 2025-03-05 22:29:19 UTC: see https://letsencrypt
+.org/docs/rate-limits/#authorization-failures-per-hostname-per-account
+Ask for help or search for solutions at https://community.letsencrypt.org. See the logfile /var/
+log/letsencrypt/letsencrypt.log or re-run Certbot with -v for more details.
