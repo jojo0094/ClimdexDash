@@ -75,13 +75,13 @@ def render(app: Dash, source: DataSource):
     return html.Div(
         className="time-series",
         children=[
-            html.H2("Time Series"),
+            html.H2("Time Series (Notes: Indices have not been verified; currently based on xclim python package)"),
             dcc.Loading(
                 id="loading-time-series",
                 type="circle",
                 children=html.Div(
                     id="time-series-output",
-                        children=html.Div("Click on the map to load data and wait for the spinner to disappear. Note: Distance buffer was not applied yet.")
+                        children=html.Div("Click on the map to load data and wait for the spinner to disappear. Note: Distance buffer logic was not applied yet.")
                 )
             )
         ]

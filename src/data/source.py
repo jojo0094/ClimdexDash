@@ -95,23 +95,23 @@ class NetCDFFileSource(DataSource):
         # Read netCDF file and extract data
         return pd.DataFrame()
 
-# Context Class to Use Different Strategies
-@dataclass
-class TimeSeriesFetcher:
-    data_source: DataSource
-
-    def get_data(self, lat: float, lon: float) -> pd.DataFrame:
-        return self.data_source.get_timeseries(lat, lon)
-
-# Example Usage
-if __name__ == "__main__":
-    # CSV Example
-    csv_source = CSVFileSource("data.csv")
-    fetcher = TimeSeriesFetcher(csv_source)
-    print(fetcher.get_data(40.7128, -74.0060))
-    
-    # Postgres Example
-    pg_source = PostgresDataSource("dbname=test user=postgres password=secret host=localhost")
-    fetcher = TimeSeriesFetcher(pg_source)
-    print(fetcher.get_data(40.7128, -74.0060))
-
+# # Context Class to Use Different Strategies
+# @dataclass
+# class TimeSeriesFetcher:
+#     data_source: DataSource
+#
+#     def get_data(self, lat: float, lon: float) -> pd.DataFrame:
+#         return self.data_source.get_timeseries(lat, lon)
+#
+# # Example Usage
+# if __name__ == "__main__":
+#     # CSV Example
+#     csv_source = CSVFileSource("data.csv")
+#     fetcher = TimeSeriesFetcher(csv_source)
+#     print(fetcher.get_data(40.7128, -74.0060))
+#
+#     # Postgres Example
+#     pg_source = PostgresDataSource("dbname=test user=postgres password=secret host=localhost")
+#     fetcher = TimeSeriesFetcher(pg_source)
+#     print(fetcher.get_data(40.7128, -74.0060))
+#
